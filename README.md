@@ -2,14 +2,14 @@
 
 Bem-vindo ao repositório do **Salão SENAC P.I.**, um sistema moderno e completo para agendamento e registro de serviços de beleza, estética e bem-estar! Este projeto foi desenvolvido para oferecer uma experiência digital incrível para os clientes de um salão de beleza, com funcionalidades como login, agendamento de serviços, visualização de perfil e muito mais.
 
-Equipe de Desenvolvimento
-Deyvid Oliveira
-Euridize Lima
-Felippe Adriel
-Marcela Belarmino
-Maria Laura
-Pérola Iuly
-Gabriel Gomes
+### Equipe de Desenvolvimento:
+- **Deyvid Oliveira**
+- **Euridize Lima**
+- **Felippe Adriel**
+- **Marcela Belarmino**
+- **Maria Laura**
+- **Pérola Iuly**
+- **Gabriel Gomes**
 
 ## 🎯 Objetivo
 
