@@ -68,7 +68,7 @@ Além disso, o salão também oferece **formações profissionais** para quem de
 1. Clone este repositório:
 
    ```bash
-   git clone https://github.com/felipperaia/salaopi.git
+   git clone https://github.com/felipperaia/SalaoSENACPI.git
 
 2. Acesse o diretório do projeto:
 
@@ -84,7 +84,7 @@ npm install
 
 npm start
 
-6. Acesse o sistema no navegador, normalmente disponível em http://localhost:3000.
+6. Acesse o sistema no navegador, normalmente disponível em http://localhost:8080.
 
 🛠️ Funcionalidades Implementadas
 Página inicial: Visão geral do salão e serviços.
