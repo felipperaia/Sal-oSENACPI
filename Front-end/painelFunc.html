@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+    <link rel="icon" type="image/png" href="imagens/logo-senac-rosa.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
+
+</head>
+<body>
+    <nav class="menu-navegacao">
+        <img src="imgs/salaosenac.png" alt="Logo do Salão Senac" class="logo">
+        <ul class="menu-itens">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="login.html">Agende seu horário</a></li>
+        </ul>
+    </nav>
+    <div class="d-flex flex-column flex-md-row vh-100">
+        <!-- Menu Lateral -->
+        <nav id="sidebar" class="col-md-2 bg-pink text-white p-4">
+            <div class="text-center">
+                <img src="imagens/foto perfil funcionario.jpg" alt="User" class="rounded-circle img-fluid mb-3" style="width: 100px;">
+                <h5>Aline Costa</h5>
+                <p>aline.costa@gmail.com</p>
+            </div>
+            <ul class="nav flex-column mt-4">
+                <li class="nav-item">
+                    <a class="nav-link text-white active" href="#">Dashboard</a>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Pagamentos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Arquivos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Eventos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Grupos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Mensagens</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Configurações</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Conteúdo Principal -->
+        <main class="col-md-10 bg-light px-4 py-3">
+            <!-- Barra Superior -->
+            <header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm p-3 mb-4">
+                <div class="navbar-brand font-weight-bold">Agenda</div>
+                <div class="ml-auto d-flex align-items-center">
+                    <form class="form-inline mr-3">
+                        <input class="form-control form-control-sm mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                        <button class="btn btn-outline-dark btn-sm" type="submit">Buscar</button>
+                    </form>
+                    <button class="btn btn-pink btn-sm text-white">Perfil</button>
+                </div>
+            </header>
+
+            <!-- Seção da Agenda -->
+            <section>
+                <!-- Botões de dia, mês e semana -->
+                <div class="view-controls">
+                    <button class="btn btn-outline-primary btn-sm" onclick="changeView('day')">Dia</button>
+                    <button class="btn btn-outline-primary btn-sm" onclick="changeView('week')">Semana</button>
+                    <button class="btn btn-outline-primary btn-sm" onclick="changeView('month')">Mês</button>
+                  </div>
+                  
+                <div class="calendar-header d-flex justify-content-between align-items-center mb-4">
+                    <button class="btn btn-outline-secondary btn-sm">Hoje</button>
+                    <h2 class="m-0">21 Outubro - 2024</h2>
+                    <div>
+                        <button class="btn btn-outline-secondary btn-sm mr-2">&lt;</button>
+                        <button class="btn btn-outline-secondary btn-sm">&gt;</button>
+                    </div>
+                </div>
+                <div class="agenda-container">
+                    <table class="table table-bordered text-center">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>Horários</th>
+                                <th>Segunda</th>
+                                <th>Terça</th>
+                                <th>Quarta</th>
+                                <th>Quinta</th>
+                                <th>Sexta</th>
+                                <th>Sábado</th>
+                                <th>Domingo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>08:00</td>
+                                <td class="event green">
+                                    Reunião
+                                    <div class="photos">
+                                        <img src="imagens/foto de perfil - func2.jpg" alt="João">
+                                        <img src="imagens/foto de perfil - func1.jpg" alt="Ana">
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td class="event blue">
+                                    Apresentação
+                                    <div class="photos">
+                                        <img src="imagens/foto de perfil - func 4.jpg" alt="João">
+                                        <img src="imagens/foto perfil- func3.webp" alt="Ana">
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="event yellow">
+                                    Call
+                                    <div class="photos">
+                                        <img src="imagens/foto perfil funcionario.jpg" alt="João">
+                                        <img src="imagens/foto de perfil - func 4.jpg" alt="Ana">
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>09:00</td>
+                                <td></td>
+                                <td class="event orange">
+                                    Marketing
+                                    <div class="photos">
+                                        <img src="imagens/foto de perfil - func1.jpg" alt="João">
+                                        <img src="imagens/foto perfil- func3.webp" alt="Ana">
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td class="event purple">
+                                    Clientes
+                                    <div class="photos">
+                                        <img src="imagens/foto de perfil - func2.jpg" alt="João">
+                                        <img src="imagens/foto perfil funcionario.jpg" alt="Ana">
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>10:00</td>
+                                <td></td>
+                                <td></td>
+                                <td class="event blue">
+                                    Design Review
+                                    <div class="photos">
+                                        <img src="imagens/foto de perfil - func1.jpg" alt="João">
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td class="event red">
+                                    Brainstorming
+                                    <div class="photos">
+                                        <img src="imagens/foto de perfil - func 4.jpg" alt="João">
+                                        <img src="imagens/foto perfil funcionario.jpg" alt="Ana">
+                                        <img src="imagens/foto de perfil - func2.jpg" alt="Ana">
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>11:00</td>
+                                <td class="event purple">
+                                    Revisão Final
+                                    <div class="photos">
+                                        <img src="imagens/foto perfil funcionario.jpg" alt="João">
+                                        <img src="imagens/foto perfil- func3.webp" alt="Ana">
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="event green">
+                                    Relatório
+                                    <div class="photos">
+                                        <img src="imagens/foto de perfil - func 4.jpg" alt="João">
+                                        <img src="imagens/foto de perfil - func1.jpg" alt="Ana">
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div id="eventModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h4 id="eventTitle"></h4>
+          <p id="eventDetails"></p>
+          <p><strong>Data:</strong> <span id="eventDate"></span></p>
+          <p><strong>Local:</strong> <span id="eventLocation"></span></p>
+          <div id="eventPhotos" class="photo-gallery"></div>
+        </div>
+      </div>
+
+<!-- Modal para Adicionar Eventos -->
+<div id="addEventModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeAddEvent">&times;</span>
+      <h4>Adicionar Evento</h4>
+      <input type="text" id="eventInput" placeholder="Nome do Evento">
+      <input type="text" id="eventTime" placeholder="Horário (ex: 08:00)">
+      <input type="text" id="eventDay" placeholder="Dia da Semana (ex: Segunda)">
+      <button class="btn btn-primary btn-sm" onclick="saveEvent()">Salvar Evento</button>
+    </div>
+  </div>
+  
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script1.js"></script>
+
+
+</body>
+</html>
